@@ -15,9 +15,11 @@
 	<div class="card-header text-center">Products</div>
 	<div class="card-body">
 <div class="form-group">
+<h2>You ordered:</h2>
+<jsp:useBean id="foodBean" class="com.benilde.appintr.Food" scope="session" />
 
-
-
+Food:  <%= foodBean.getFood() %><br>
+Price: <%= foodBean.getPrice() %><br>
 
 <div class="text-center">
 <a href="index.jsp"><button>Back</button></a>
