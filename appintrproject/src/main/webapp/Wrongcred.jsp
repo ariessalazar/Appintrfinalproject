@@ -5,19 +5,24 @@
 <head>
 <meta charset="ISO-8859-1">
 </head>
-
-<style>
-.mess {
-  font-family: 'Arial';font-size: 20px;
-  color: red;
-  text-align: left;
-}
-</style>
-
+<%@ include file="includes/header.jsp" %>
 <body>
-<div class = "mess">
+
+
+<div class="container">
+	<div class="card w-50 mx-auto my-5">
+	<div class="card-header text-center"></div>
+	<div class="card-body">
+<div class="form-group">
 Wrong Username or Pasword
 </div>
+<div class="text-center">
 <a href="Login.jsp"><button>Go back</button></a>
+</div>
+</div>
+</div>
+</div>
+<%@ include file="includes/footer.jsp" %>
 </body>
+
 </html>
